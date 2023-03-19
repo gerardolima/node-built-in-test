@@ -1,0 +1,22 @@
+{
+  "name": "node-built-in-test-sample",
+  "version": "1.0.0",
+  "author": "gerardo.lima@gmail.com",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">= 18.15.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --trace-warnings --test --test-reporter spec",
+    "test:generation": "node --trace-warnings --test --test-reporter spec  generation.js",
+    "test:performance": "node --trace-warnings --test --test-reporter spec  test-performance.js",
+    "test:restating-process": "node --trace-warnings --test --test-reporter spec  test-restarting-process.js"
+  },
+  "dependencies": {
+    "koa": "^2.14.1",
+    "koa-router": "^12.0.0"
+  }
+}
